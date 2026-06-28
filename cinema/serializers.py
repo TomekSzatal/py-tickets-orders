@@ -118,6 +118,7 @@ class TicketSerializer(serializers.ModelSerializer):
         )
         return attrs
 
+
 class TicketListSerializer(serializers.ModelSerializer):
     movie_session = MovieSessionListSerializer(read_only=True)
 
